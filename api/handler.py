@@ -4,9 +4,9 @@ from flask             import Flask, request, Response
 from rossmann.Rossmann import Rossmann
 
 # loading model
-model = pickle.load( open( '/Users/meigarom/repos/DataScience_Em_Producao/model/model_rossmann.pkl', 'rb') )
+model = pickle.load( open( r'C:\Users\arros\OneDrive\ciencia_de_dados\data_science_em_producao\Rossmann-Kaggle\model\model_rossmann.pkl', 'rb') )
 
-# initialize API
+# Initialize API
 app = Flask( __name__ )
 
 @app.route( '/rossmann/predict', methods=['POST'] )
@@ -14,7 +14,7 @@ def rossmann_predict():
     test_json = request.get_json()
    
     if test_json: # there is data
-        if isinstance( test_json, dict ): # unique example
+        if instance( test_json, dict ): # unique example
             test_raw = pd.DataFrame( test_json, index=[0] )
             
         else: # multiple example
@@ -23,16 +23,16 @@ def rossmann_predict():
         # Instantiate Rossmann class
         pipeline = Rossmann()
         
-        # data cleaning
+        # Data cleaning
         df1 = pipeline.data_cleaning( test_raw )
         
-        # feature engineering
+        # Feature engineering
         df2 = pipeline.feature_engineering( df1 )
         
-        # data preparation
+        # Data preparation
         df3 = pipeline.data_preparation( df2 )
         
-        # prediction
+        # Prediction
         df_response = pipeline.get_prediction( model, test_raw, df3 )
         
         return df_response
