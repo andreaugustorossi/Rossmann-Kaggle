@@ -8,12 +8,12 @@ import datetime
 
 class Rossmann( object ):
     def __init__( self ):
-        self.home_path= r'C:\Users\arros\OneDrive\ciencia_de_dados\data_science_em_producao\Rossmann-Kaggle'
-        self.rescaling_competition_distance      = pickle.load( open( self.home_path + r'\parameters\rescaling_competition_distance.pkl', 'rb' ) )
-        self.rescaling_competition_time_month    = pickle.load( open( self.home_path + r'\parameters\rescaling_competition_time_month.pkl', 'rb' ) )
-        self.rescaling_promo_time_week           = pickle.load( open( self.home_path + r'\parameters\rescaling_promo_time_week.pkl', 'rb' ) )
-        self.rescaling_year                      = pickle.load( open( self.home_path + r'\parameters\rescaling_year.pkl', 'rb' ) )
-        self.encoding_store_type                 = pickle.load( open( self.home_path + r'\parameters\encoding_store_type.pkl', 'rb' ) )
+        self.home_path = ''
+        self.rescaling_competition_distance      = pickle.load( open( self.home_path + 'parameters/rescaling_competition_distance.pkl', 'rb' ) )
+        self.rescaling_competition_time_month    = pickle.load( open( self.home_path + 'parameters/rescaling_competition_time_month.pkl', 'rb' ) )
+        self.rescaling_promo_time_week           = pickle.load( open( self.home_path + 'parameters/rescaling_promo_time_week.pkl', 'rb' ) )
+        self.rescaling_year                      = pickle.load( open( self.home_path + 'parameters/rescaling_year.pkl', 'rb' ) )
+        self.encoding_store_type                 = pickle.load( open( self.home_path + 'parameters/encoding_store_type.pkl', 'rb' ) )
         
         
     def data_cleaning( self, df1 ): 
