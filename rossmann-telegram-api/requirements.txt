@@ -2,7 +2,6 @@ appnope==0.1.0
 attrs==19.3.0
 backcall==0.1.0
 bleach==3.1.0
-Boruta==0.3
 certifi==2019.11.28
 chardet==3.0.4
 Click==7.0
@@ -58,5 +57,4 @@ wcwidth==0.1.7
 webencodings==0.5.1
 Werkzeug==0.16.0
 widgetsnbextension==3.5.1
-xgboost==1.2.0
 zipp==0.6.0
