@@ -1,12 +1,16 @@
-import os
-import requests
 import json
+import requests
 import pandas as pd
-
+import matplotlib.pyplot as plt
+import seaborn as sns
+import telegram
+import os
+from io import BytesIO
 from flask import Flask, request, Response
 
 # Constants
 TOKEN = '1389763704:AAELP5r6P2S8AH410pYZOZZKw_hdIoQq5M4'
+bot = telegram.Bot(token=TOKEN)
 
 # Bot Info
 #https://api.telegram.org/bot1389763704:AAELP5r6P2S8AH410pYZOZZKw_hdIoQq5M4/getMe
@@ -108,27 +112,37 @@ def index():
                 # calculation
                 d2 = d1[['store', 'prediction']].groupby( 'store' ).sum().reset_index()
                 
+                # Send Lineplot
+                fig = plt.figure()
+                sns.lineplot(x = 'week_of_year', y = 'prediction', data = d1)
+                sns.set_style('whitegrid')
+                plt.title('Weekly Sales Forecast for Store {}'.format(d2['store'].values[0]))
+                plt.xlabel('Week of Year (starting from week 31 - July 19th)')
+                plt.ylabel('Sales Prediction (US$)')
+                buffer = BytesIO()
+                fig.savefig(buffer, format='png')
+                buffer.seek(0)
+                bot.send_photo(chat_id=chat_id, photo=buffer)
+
                 # send message
                 msg = 'Store Number {} will sell R${:,.2f} in the next 6 weeks'.format(
                             d2['store'].values[0],
                             d2['prediction'].values[0] ) 
 
-                send_message( chat_id, msg )
-                return Response( 'Ok', status = 200 )
+                send_message(chat_id, msg)
+                return Response('OK', status=200)
 
             else:
-                send_message( chat_id, 'Store Not Available' )
-                return Response( 'Ok', status = 200 )
+                send_message(chat_id, 'Store number is not available')
+                return Response('OK', status=200)
 
         else:
-            send_message( chat_id, 'Store ID is Wrong' )
-            return Response( 'Ok', status = 200 )
-
+            send_message(chat_id, 'This is not a store number')
+            return Response('OK', status=200)
 
     else:
-        return '<h1> Rossmann Telegram BOT </h1>'
-
+        return '<h1>Rossmann Telegram BOT</h1>'
 
 if __name__ == '__main__':
-    port = os.environ.get( 'PORT', 5000 )
-    app.run( host='0.0.0.0', port = port )
+    port = os.environ.get('PORT', 5000)
+    app.run(host='0.0.0.0', port=port)
