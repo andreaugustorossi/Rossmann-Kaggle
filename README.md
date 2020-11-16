@@ -92,8 +92,6 @@ To exemplify one of the insights generate and how it was achieved will be shown 
 
 ![](img/h21.png)
 
-![](img/h22.png)
-
 As can be seen, contrary to what was thought, stores with close competitors sell more. The idea that a market monopoly in a region is better for business is wrong.
 
 Another example is the ninth hypothesis. It is a common sense the idea that in the weekends the stores should sell more, but the analysis showed the opposite:
