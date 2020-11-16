@@ -72,36 +72,26 @@ As can be seen the sales curve is not normal showing a moderate asymmetry of 0.6
 
 The previous mind map resulted in ten hypotheses selected to validate and generate business insights. The hypothesis and their answers are below:
 
-H1 Stores with higher assortments should sell more.
-False - Stores with less assortment sell more
+H1 Stores with higher assortments should sell more. False - Stores with less assortment sell more
 
-H2 Stores with closer competitors should sell less
-False - Stores with close competitors sell more
+H2 Stores with closer competitors should sell less. False - Stores with close competitors sell more
 
-H3 Stores with long term competitors should sell more
-False - Stores with short term competitors sell more
+H3 Stores with long term competitors should sell more. False - Stores with short term competitors sell more
 
-H4 Stores with active promotions should sell more
-True - Stores in promo 1 sell more
-False - Stores in extended promo (promo 2) sell less
+H4 Stores with active promotions should sell more. True - Stores in promo 1 sell more. False - Stores in extended promo (promo 2) sell less
 
 H5 Stores with more consecutive promotions sell more
 False - Stores with more consecutive promotions sell less
 
-H6 Stores open during the Christmas holiday should sell more.
-False - Stores open during the Christmas holiday should sell less
+H6 Stores open during the Christmas holiday should sell more. False - Stores open during the Christmas holiday should sell less
 
-H7 Stores should sell more over the years.
-False - Stores sell less over the years
+H7 Stores should sell more over the years. False - Stores sell less over the years
 
-H8 Stores should sell more in the second half of the year.
-False - Stores sell less in the second half of the year
+H8 Stores should sell more in the second half of the year. False - Stores sell less in the second half of the year
 
-H9 Stores should sell less on weekends.
-True - Stores sell less on weekends
+H9 Stores should sell less on weekends. True - Stores sell less on weekends
 
-H10 Stores should sell less during school holidays.
-True - Stores sell less during school holidays
+H10 Stores should sell less during school holidays. True - Stores sell less during school holidays
 
 To exemplify one of the insights generate and how it was achieved will be shown the validation process of the second hypothesis (Stores with closer competitors should sell less) that have shown to be false.
 
@@ -155,6 +145,7 @@ From a business perspective there are some examples below of the predictions mad
 ![](img/storepred.png)
 
 MAE – Mean Absolute Error
+
 MAPE – Mean Absolute Percentage Error
 
 As can be seen the variation in forecasts considering the error is minimal and the model’s performance is satisfactory. 
@@ -166,7 +157,9 @@ As can be seen the variation in forecasts considering the error is minimal and t
 This chart shows some outliers in the predictions made. The dots circled in red are the most difficult stores to predict. Some possibilities to solve this problem are:
 
 -	Review specific data of each one to decide what to do with the values;
+
 -	Try another machine learning models;
+
 -	Make another cycle (CRSIP-DS) of the entire project. 
 
 <br>
@@ -177,11 +170,11 @@ This chart shows some outliers in the predictions made. The dots circled in red 
 
 Key points:
 
-The predictions made are quite close to the real sales, although there is some variance in error rate. This can be seen in observing the first two line plots.
+- The predictions made are quite close to the real sales, although there is some variance in error rate. This can be seen in observing the first two line plots.
 
-The histogram (3th chart) shows a distribution similar to a normal distribution.
+- The histogram (3th chart) shows a distribution similar to a normal distribution.
 
-The last chart (scatter plot) shows the majority of the points fit in a tube shape, which means that the variation in error is low.
+- The last chart (scatter plot) shows the majority of the points fit in a tube shape, which means that the variation in error is low.
 
 <br>
 
