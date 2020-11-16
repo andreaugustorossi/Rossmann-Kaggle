@@ -125,7 +125,7 @@ def index():
                 bot.send_photo(chat_id=chat_id, photo=buffer)
 
                 # send message
-                msg = 'Store Number {} will sell R${:,.2f} in the next 6 weeks'.format(
+                msg = 'Store {} will sell ${:,.2f} in the next six weeks.'.format(
                             d2['store'].values[0],
                             d2['prediction'].values[0] ) 
 
@@ -133,11 +133,11 @@ def index():
                 return Response('OK', status=200)
 
             else:
-                send_message(chat_id, 'Store number is not available')
+                send_message(chat_id, 'Store number not available.')
                 return Response('OK', status=200)
 
         else:
-            send_message(chat_id, 'This is not a store number')
+            send_message(chat_id, 'This is not a store number. Please, type a store number between 1 and 1115.')
             return Response('OK', status=200)
 
     else:
