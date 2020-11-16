@@ -178,7 +178,7 @@ Key points:
 
 <br>
 
-### 4.5 Conclusion and Next Steps
+### 5.0 Conclusion and Next Steps
 
 In general, it is possible to conclude that the model performed well and there is no need to go deeper by doing the second cycle of CRISP-DS, as time and resources may not be worthwhile in a real industry situation. Errors are low and the budget can be invested safely. On the other hand, if we decide to go even further, some steps can be followed as follows:
 
