@@ -1,25 +1,40 @@
 # Six Weeks Sales Forecast - Rossmann Stores
 
-![](img/banner.png)
+![](img/Banner.png)
 
 ---
 
 ## 1.0 The Context
-Dirk Rossmann GmbH is Germany's second-largest drug store chain, with over 3,790 stores in Europe. Rossmann store managers are tasked with predicting their daily sales for up to six weeks in advance. Store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality. 
+This project is the result of the Data Science in Production course by Meigaron Lopez. The goal is to offer an end-to-end solution to a Kaggle challenge as if it were a real industry situation. To achieve this goal, a cyclic model called CRISP-DS (Cross Industry Process for Data Science) is used, which implies 10 steps as follows:
+
+1 Data Description
+2 Data Engineering
+3 Variable Filtering
+4 Exploratory Data Analysis
+5 Data Preparation
+6 Variable Selection using Algorithms
+7 Machine Learning
+8 Hyperparameter Fine Tuning
+9 Error Interpretation
+10 Deploy 
+
+The main idea is to offer a fast end-to-end solution industry-driven in one cycle and only after the end tries to improve the solution if necessary, redoing the entire cycle. The complete notebook found in this repository is divided into sections following these steps.
 
 <br>
 
 ## 2.0 The Challenge
-Offer a simple and optimized AI solution that gives sales forecasts for the next six weeks of the 1115 stores available to Rossmann managers.
+Dirk Rossmann GmbH is Germany's second-largest drug store chain, with over 3,790 stores in Europe. Rossmann store managers are tasked with predicting their daily sales for up to six weeks in advance. Store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality. 
 
 <br> 
 
 ## 3.0 The Solution
+Offer a simple and optimized AI solution that gives sales forecasts for the next six weeks of the 1115 stores available to Rossmann managers.
+
 It was proposed a convenient telegram bot. 
 
 The only thing that managers need to do on their cellphones is opening the app telegram and type to RossmannBot the number of the store to see the total amount of money predicted by the AI model for the next six weeks. If the store is available, will be sent a line plot graph that shows the sales predictions by the weeks of the year (starting from the week 31 - July 19h) followed by a message "Store X will sell $XXX,XXX.XX in the next six weeks. Unfortunately, not all of 1115 stores are available, so when it is typed a non-available number it is sent the message "Store number not available". When anything else is typed, like a word, for instance, it is sent the message "This is not a store number. Please, type a store number between 1 and 1115."
 
-![](img/bot.gif)
+<img src="/img/bot.gif" width="300" height="600"/>
 
 <br> 
 
