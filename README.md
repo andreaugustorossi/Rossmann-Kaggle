@@ -172,7 +172,7 @@ Key points:
 
 - The predictions made are quite close to the real sales, although there is some variance in error rate. This can be seen in observing the first two line plots.
 
-- The histogram (3th chart) shows a distribution similar to a normal distribution.
+- The histogram (3rd chart) shows a distribution similar to a normal distribution, despite de leptokurtic shape. 
 
 - The last chart (scatter plot) shows the majority of the points fit in a tube shape, which means that the variation in error is low.
 
