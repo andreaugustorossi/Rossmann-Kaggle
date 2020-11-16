@@ -1,7 +1,6 @@
 # Six Weeks Sales Forecast - Rossmann Stores
 
-
-![] (img/banner.jpg)
+![](img/banner.png)
 
 ---
 
@@ -20,7 +19,7 @@ It was proposed a convenient telegram bot.
 
 The only thing that managers need to do on their cellphones is opening the app telegram and type to RossmannBot the number of the store to see the total amount of money predicted by the AI model for the next six weeks. If the store is available, will be sent a line plot graph that shows the sales predictions by the weeks of the year (starting from the week 31 - July 19h) followed by a message "Store X will sell $XXX,XXX.XX in the next six weeks. Unfortunately, not all of 1115 stores are available, so when it is typed a non-available number it is sent the message "Store number not available". When anything else is typed, like a word, for instance, it is sent the message "This is not a store number. Please, type a store number between 1 and 1115."
 
-![] (img/bot.gif)
+![](img/bot.gif)
 
 <br> 
 
@@ -30,7 +29,7 @@ The only thing that managers need to do on their cellphones is opening the app t
 
 Descriptive Statistics
 
-![] (img/stats.png)
+![](img/stats.png)
 
 #### Key points
 
@@ -42,13 +41,13 @@ Descriptive Statistics
 
 To decide the best hypothesis to test it was outlined a brained storm mind map as follows:
 
-![] (img/MindMapHypothesis.jpg)
+![](img/MindMapHypothesis.jpg)
 
 <br>
 
 #### Univariate Analysis
 
-![] (img/univar.png)
+![](img/univar.png)
 
 As can be seen the sales curve is not normal showing a moderate asymmetry of 0.64 (positive skewness) and a kurtosis of 1.77 (leptokurtic shape). This implies that there are outliers in the dataset.   
 
@@ -91,15 +90,15 @@ True - Stores sell less during school holidays
 
 To exemplify one of the insights generate and how it was achieved will be shown the validation process of the second hypothesis (Stores with closer competitors should sell less) that have shown to be false.
 
-![] (img/h21.png)
+![](img/h21.png)
 
-![] (img/h22.png)
+![](img/h22.png)
 
 As can be seen, contrary to what was thought, stores with close competitors sell more. The idea that a market monopoly in a region is better for business is wrong.
 
 Another example is the ninth hypothesis. It is a common sense the idea that in the weekends the stores should sell more, but the analysis showed the opposite:
 
-![] (img/h9.png)
+![](img/h9.png)
 
 As can be observed the bar chart shows a slight drop during the week until Saturday, but on Sunday sales reached their lowest point, which certainly contributed to the high correlation shown in the other two charts.
 
@@ -109,12 +108,14 @@ As can be observed the bar chart shows a slight drop during the week until Satur
 
 The chart below shows all the correlations among all the numerical features previous selected (columns) of the dataset.
 
-![] (img/corr.png)
+![](img/corr.png)
 
 As can be observed just three correlations showed some importance. The correlations are:
 
 0.37 (week correlation) - Promo X Sales
+
 0.45 (medium correlation) - Is_Promo X Promo 2
+
 0.96 (very strong correlation) - Month X Week of Year
 
 Unfortunately, these correlations are unable to significantly impact our decisions on which variables to select for our model, but they are important because we can observe their behavior and use them to improve budget planning and avoid wasting money.
@@ -125,12 +126,12 @@ Unfortunately, these correlations are unable to significantly impact our decisio
 
 For this project it was tested four machine learning models: Linear Regression, Lasso Regression, Random Forest Regressor and XGboost Regressor. The results of cross-validation are shown below:
 
- ![] (img/crosval.png)
+ ![](img/crosval.png)
 
 
 Although Random Forest has shown the best performance, XGBoost may be a better solution, because it is lightweight to deploy. For even better performance, Boruta was chosen as a feature selector to fine-tuning the model. Including all the features selected by Boruta, the performance has had a significant improvement. The result is as follows:
 
-![] (img/xgb.png)
+![](img/xgb.png)
 
 <br>
 
@@ -138,7 +139,7 @@ Although Random Forest has shown the best performance, XGBoost may be a better s
 
 From a business perspective there are some examples below of the predictions made:
 
-![] (img/storepred.png)
+![](img/storepred.png)
 
 MAE – Mean Absolute Error
 MAPE – Mean Absolute Percentage Error
@@ -147,7 +148,7 @@ As can be seen the variation in forecasts considering the error is minimal and t
 
 #### MAPE Chart
 
-![] (img/mape.png)
+![](img/mape.png)
 
 This chart shows some outliers in the predictions made. The dots circled in red are the most difficult stores to predict. Some possibilities to solve this problem are:
 
@@ -159,7 +160,7 @@ This chart shows some outliers in the predictions made. The dots circled in red 
 
 ### 4.4 Machine Learning Performance
 
-![] (img/mlperf.png)
+![](img/mlperf.png)
 
 Key points:
 
