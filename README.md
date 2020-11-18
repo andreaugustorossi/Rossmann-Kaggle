@@ -8,14 +8,23 @@
 This project is the result of the Data Science in Production course by Meigaron Lopez. The goal is to offer an end-to-end solution to a Kaggle challenge as if it were a real industry situation. To achieve this goal, a cyclic model called CRISP-DS (Cross Industry Process for Data Science) is used, which implies 10 steps as follows:
 
 1 Data Description
+
 2 Data Engineering
+
 3 Variable Filtering
+
 4 Exploratory Data Analysis
+
 5 Data Preparation
+
 6 Variable Selection using Algorithms
+
 7 Machine Learning
+
 8 Hyperparameter Fine Tuning
+
 9 Error Interpretation
+
 10 Deploy 
 
 The main idea is to offer a fast end-to-end solution industry-driven in one cycle and only after the end tries to improve the solution if necessary, redoing the entire cycle. The complete notebook found in this repository is divided into sections following these steps.
@@ -109,7 +118,7 @@ As can be observed the bar chart shows a slight drop during the week until Satur
 
 #### Multivariate Analysis
 
-The chart below shows all the correlations among all the numerical features previous selected (columns) of the dataset.
+The chart below shows all the correlations among all the numerical features previous selected.
 
 ![](img/corr.png)
 
@@ -132,7 +141,7 @@ For this project it was tested four machine learning models: Linear Regression, 
  ![](img/crosval.png)
 
 
-Although Random Forest has shown the best performance, XGBoost may be a better solution, because it is lightweight to deploy. For even better performance, Boruta was chosen as a feature selector to fine-tuning the model. Including all the features selected by Boruta, the performance has had a significant improvement. The result is as follows:
+Although Random Forest has shown the best performance, XGBoost may be a better solution, because it is lightweight to deploy. For even better performance, Boruta was chosen as a feature selector to fine-tuning the model. Including all the features selected by Boruta the performance has had a significant improvement. The result is as follows:
 
 ![](img/xgb.png)
 
