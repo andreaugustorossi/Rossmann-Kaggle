@@ -41,7 +41,7 @@ Offer a simple and optimized AI solution that gives sales forecasts for the next
 
 It was proposed a convenient telegram bot. 
 
-The only thing that managers need to do on their cellphones is opening the app telegram and type to RossmannBot the number of the store to see the total amount of money predicted by the AI model for the next six weeks. If the store is available, will be sent a line plot graph that shows the sales predictions by the weeks of the year (starting from the week 31 - July 19h) followed by a message "Store X will sell $XXX,XXX.XX in the next six weeks. Unfortunately, not all of 1115 stores are available, so when it is typed a non-available number it is sent the message "Store number not available". When anything else is typed, like a word, for instance, it is sent the message "This is not a store number. Please, type a store number between 1 and 1115."
+The only thing that managers need to do on their cellphones is opening the app telegram and type to RossmannBot the number of the store to see the total amount of money predicted by the AI model for the next six weeks. If the store is available, will be sent a line plot graph that shows the sales predictions by the weeks of the year (starting from the week 31 - July 19h) followed by a message "Store X will sell $XXX,XXX.XX in the next six weeks". Unfortunately, not all of 1115 stores are available, so when it is typed a non-available number it is sent the message "Store number not available". When anything else is typed, like a word, for instance, it is sent the message "This is not a store number. Please, type a store number between 1 and 1115."
 
 <img src="/img/bot.gif" width="300" height="600"/>
 
