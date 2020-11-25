@@ -141,7 +141,7 @@ For this project it was tested four machine learning models: Linear Regression, 
  ![](img/crosval.png)
 
 
-Although Random Forest has shown the best performance, XGBoost may be a better solution, because it is lightweight to deploy. For even better performance, Boruta was chosen as a feature selector to fine-tuning the model. Including all the features selected by Boruta the performance has had a significant improvement. The result is as follows:
+Linear models performed poorly, which implies that the problem is more complex and non-linear. Although Random Forest has shown the best performance, XGBoost may be a better solution, because it is lightweight to deploy and fast. For even better performance, Boruta was chosen as a feature selector to fine-tuning the model. Including all the features selected by Boruta the performance has had a significant improvement. The result is as follows:
 
 ![](img/xgb.png)
 
