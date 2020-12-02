@@ -64,7 +64,7 @@ Descriptive Statistics
 
 #### Hypothesis Mind Map
 
-To decide the best hypothesis to test, a brained storm mind map was outlined as s:
+To decide the best hypothesis to test, a brained storm mind map was outlined as follows:
 
 ![](img/MindMapHypothesis.jpg)
 
