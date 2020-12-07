@@ -150,7 +150,7 @@ Linear models performed poorly, which implies that the problem is more complex a
 
 ### 4.3 Business Performance
 
-From a business perspective there are some examples below of the predictions made:
+There are some examples of final predictions below from a business perspective:
 
 ![](img/storepred.png)
 
@@ -158,7 +158,7 @@ MAE – Mean Absolute Error
 
 MAPE – Mean Absolute Percentage Error
 
-As can be seen the variation in forecasts considering the error is minimal and the model’s performance is satisfactory. 
+As it can be seen, the variation in forecasts considering the error is minimal and the model’s performance is satisfactory. 
 
 #### MAPE Chart
 
@@ -166,7 +166,7 @@ As can be seen the variation in forecasts considering the error is minimal and t
 
 This chart shows some outliers in the predictions made. The dots circled in red are the most difficult stores to predict. Some possibilities to solve this problem are:
 
--	Review specific data of each one to decide what to do with the values;
+-	Review specific data of each one to decide what to do about values;
 
 -	Try another machine learning models;
 
