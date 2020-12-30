@@ -74,7 +74,7 @@ To decide the best hypothesis to test, a brained storm mind map was outlined as 
 
 ![](img/univar.png)
 
-As it can be seen, the sales curve is not normal showing a moderate asymmetry of 0.64 (positive skewness) and a kurtosis of 1.77 (leptokurtic shape). This implies that there are outliers in the dataset.   
+As can be seen, the sales curve is not normal showing a moderate asymmetry of 0.64 (positive skewness) and a kurtosis of 1.77 (leptokurtic shape). This implies that there are outliers in the dataset.   
 
 <br>
 
@@ -107,13 +107,13 @@ To exemplify one of the insights generated and how it was achieved the validatio
 
 ![](img/h21.png)
 
-As it can be seen, contrary to what was thought, stores with close competitors sell more. The idea that a market monopoly in a region is better for business is wrong.
+As can be seen, contrary to what was thought, stores with close competitors sell more. The idea that a market monopoly in a region is better for business is wrong.
 
 Another example is the ninth hypothesis. It is a common sense the idea that in the weekends the stores should sell more, but the analysis showed the opposite:
 
 ![](img/h9.png)
 
-As it can be observed, the bar chart shows a slight drop during the week until Saturday, but on Sunday sales reached their lowest point, which certainly contributed to the high correlation shown in the other two charts.
+As can be observed, the bar chart shows a slight drop during the week until Saturday, but on Sunday sales reached their lowest point, which certainly contributed to the high correlation shown in the other two charts.
 
 <br>
 
@@ -158,7 +158,7 @@ MAE – Mean Absolute Error
 
 MAPE – Mean Absolute Percentage Error
 
-As it can be seen, the variation in forecasts considering the error is minimal and the model’s performance is satisfactory. 
+As can be seen, the variation in forecasts considering the error is minimal and the model’s performance is satisfactory. 
 
 #### MAPE Chart
 
